@@ -2,7 +2,7 @@
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/tu-usuario/desafio-tecnico-ACQ2025.git
+    git clone https://github.com/EduardoAguilar92/desafio-tecnico-ACQ2025.git
     cd desafio-tecnico-ACQ2025
     ```
 
@@ -50,18 +50,14 @@
 ## 6. Instalación y Uso
 
 Para replicar el entorno y ejecutar el proyecto, siga los siguientes pasos:
+1. Colocar el archivo `new_items_dataset.csv` en la ruta `./data/raw/`
+2. En la terminal, correr el siguiente comando: `python main.py --train=True` 
+   - Esto iniciará el entrenamiento del modelo, además de generar un reporte de la exploración de los datos y los resultados obtenidos.
+   - Tambien se puede ejecutar el comando: `python main.py --train=False` para generar el reporte teniendo ya los archivos `.pkl` generados.
+3. El reporte final se encuentra en la ruta `./template/report.md`
 
 
 
-## Objetivos:
-- Análisis exploratorio completo del dataset de MercadoLibre
-- Feature Engineering avanzado para crear variables predictivas
-- Modelado predictivo con múltiples algoritmos de Machine Learning
-- Generación de insights accionables para Marketing y Negocio
-- Pipeline de producción escalable y mantenible
-
-## Análisis Exploratorio de Datos (EDA):
-El dataset `new_items_dataset.csv` tiene 100.000 registros de ítems extraídos del marketplace en MercadoLibre, caracterizados a través de 26 diferentes columnas, de las cuales 20 son `categóricas` y 6 son `numéricas`.
 
 
 
