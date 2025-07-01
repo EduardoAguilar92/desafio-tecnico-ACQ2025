@@ -1,6 +1,31 @@
-# 📊 Reporte de resultados
+# Análisis Predictivo y Pipeline de Producción - Desafío Técnico ACQ 2025
 
-## 1. Análisis exploratorio de datos (EDA)
+## 1. Descripción del Proyecto
+Este repositorio contiene la solución completa para el Desafío Técnico ACQ 2025. El proyecto se centra en el análisis exhaustivo de un dataset de productos de MercadoLibre, con el objetivo de desarrollar modelos de machine learning que generen valor para el negocio. Se abarca desde el análisis exploratorio de datos (EDA) y la ingeniería de características hasta la implementación y evaluación de múltiples algoritmos predictivos, culminando en el diseño de un pipeline de producción escalable.
+
+
+## 2. Objetivos Principales
+
+Los objetivos clave de este proyecto son:
+
+- **Análisis Exploratorio de Datos (EDA):** Realizar un análisis completo del dataset para comprender la distribución, relaciones y características de los datos.
+- **Ingeniería de Características:** Crear y transformar variables para maximizar el rendimiento de los modelos predictivos.
+- **Modelado Predictivo:** Implementar, entrenar y evaluar diversos algoritmas de Machine Learning para resolver un problema de negocio específico (ej. clasificación de productos, predicción de ventas, etc.).
+- **Generación de Insights:** Extraer conclusiones y hallazgos accionables a partir de los datos y los resultados de los modelos, con aplicabilidad en áreas como Marketing y Estrategia de Negocio.
+- **Pipeline de Producción:** Diseñar un flujo de trabajo robusto, escalable y mantenible para la puesta en producción de los modelos.
+
+## 3. Metodología
+
+El proyecto sigue una metodología estructurada en las siguientes fases:
+
+1.  **Configuración del Entorno:** Creación de un entorno virtual y gestión de dependencias.
+2.  **Análisis Exploratorio (EDA):** Inspección inicial, limpieza de datos, análisis univariado y bivariado, y visualización para identificar patrones.
+3.  **Preprocesamiento e Ingeniería de Características:** Tratamiento de valores nulos, codificación de variables categóricas y creación de nuevas características relevantes.
+4.  **Modelado y Evaluación:** Entrenamiento de algoritmos (ej. Regresión Logística, Random Forest, Gradient Boosting) y evaluación de su rendimiento mediante métricas apropiadas.
+5.  **Optimización:** Ajuste de hiperparámetros para mejorar la precisión del modelo seleccionado.
+6.  **Interpretación y Conclusiones:** Análisis de los resultados para generar insights de negocio.
+
+## 4. Análisis exploratorio de datos (EDA)
 - Total de registros: {total_registros}
 - Total de columnas: {total_columnas}
 - Tamaño del archivo: {tamanio_archivo}
@@ -19,7 +44,7 @@
 
 {nulos}
 
-## 2. Feature Engineeering
+## 5. Feature Engineeering
 
 ### Tratamiento de nulos: 
 
@@ -43,7 +68,7 @@ Para el proceso de selección de características se utilizó el método de Rand
 
 Estas 6 variables capturan los elementos más importantes: calidad del producto, confianza en el vendedor y gestión de inventario, representando juntas casi el 80% de la importancia total del modelo, lo que permite crear un modelo eficiente y enfocado en los factores que realmente predicen el comportamiento de ventas.
 
-## 3. Modelo predictivo
+## 6. Modelo predictivo
 
 Analizando los resultados de los modelos predictivos, se pueden observar varios puntos importantes:
 - **Rendimiento General**
@@ -64,7 +89,7 @@ Analizando los resultados de los modelos predictivos, se pueden observar varios 
 
 {analisis_modelo}
 
-## 4. Análisis de resultados
+## 7. Análisis de resultados
 
 A continuación, se muestra el desempeño del mejor modelo con el conjunto de validación pero ahora en los datos de prueba.
 
@@ -73,7 +98,7 @@ A continuación, se muestra el desempeño del mejor modelo con el conjunto de va
 Los resultados obtenidos en el conjunto de datos de prueba demuestran un rendimiento sólido y equilibrado del modelo seleccionado. Con un accuracy del 72.18%, el modelo clasifica correctamente aproximadamente 7 de cada 10 casos, mientras que el balanced accuracy del 72.31% confirma que este rendimiento se mantiene consistente across todas las clases, indicando que no existe un sesgo significativo hacia clases mayoritarias. La precisión del 67.93% revela que cuando el modelo predice una clase positiva, acierta en aproximadamente 2 de cada 3 casos, minimizando los falsos positivos. Por su parte, el recall del 82.68% es particularmente destacable, ya que indica que el modelo identifica exitosamente más del 80% de los casos positivos reales, lo cual es crucial para evitar falsos negativos. El F1-Score del 74.58% representa un equilibrio óptimo entre precisión y recall, confirmando la robustez general del modelo. Finalmente, la correlación de Matthews del 45.56% sugiere una correlación moderada-alta entre las predicciones y los valores reales, validando la calidad predictiva del modelo en un contexto de clasificación binaria.
 
 
-## 5. Insights para Marketing y Negocio
+## 8. Insights para Marketing y Negocio
 
 Analizando estos resultados de modelos de machine learning, puedo identificar varios insights valiosos para marketing y negocio:
 
